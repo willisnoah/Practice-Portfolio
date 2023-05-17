@@ -2,82 +2,47 @@
     font-family: sans-serif; 
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+
 }
 
+header {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: lightblue; 
+    color: black;
+}
 body {
     background-color: gray;
-    color: white
+    display: block;
 }
 
 h1 {
     text-align: center;
-    font-size: 35px;
-}
-
-h2 {
- float:left; 
- margin-right: 30px;
- font-size: 25px;
+    font-size: 28px;
 }
 
 .header h1{
     display: inline-block;
     text-align: center;
     margin-left: 25px;
-}
+} 
 
-div {
-    display: block;
-}
-
-.name {
+ .container{
+    float:left; 
     font-size: 25px;
+    border: 10px solid blue;
+    padding: 25px;
+    margin: 35px;
     color: black;
-    font-weight: bold;
-    border: beige;
-    border-style: solid;
-    width: 80px;
-    text-align: center;
-    margin: auto;
-}
+    background-color: lightslategray;
+    height: 900px;
+} 
  
-.About-Me {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 35px;
-    color: white;
-    clear: both;
-    background-color: lightskyblue;
-}
-
-.Work {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 35px;
-    color: white;
-    clear: both;
-    background-color: lightskyblue;
-}
-
-.Contact-Me {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 35px;
-    color: white;
-    clear: both;
-    background-color: lightskyblue;
-}
-
-.Resume {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 35px;
-    color: white;
-    clear: both;
-    background-color: lightskyblue;
-    display: center; 
-
+.container2 {
+    width: 50%;
+    padding: 50px; 
+    margin: 50px;
 }
 
 a {
@@ -86,11 +51,9 @@ a {
 }
 
 .header div {
-    padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: sans-serif;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .header div ul {
@@ -103,25 +66,20 @@ a {
 }
 
 p {
-    font-size: 17px;
-    text-align: center;
-    background-position: auto;
-}
+    font-size: 20px;
 
-header {
-    height: 60px;
-    width: 100%;
-    line-height: 60px;
-    background-color: beige; 
-    color: black;
 }
 
 div a:hover{
     color: blue;
 }
 
-@media screen and (min-width: 80rem) {
-    .container {
-      margin: 1em 2em;
+.container:hover {
+    filter: brightness(50%);
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+    .container2 {
+      
     }
   }
