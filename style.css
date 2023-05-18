@@ -2,16 +2,16 @@
     font-family: sans-serif; 
     padding: 0;
     margin: 0;
-
 }
 
 header {
-    height: 60px;
+    height: 80px;
     width: 100%;
     line-height: 60px;
     background-color: lightblue; 
     color: black;
 }
+
 body {
     background-color: gray;
     display: block;
@@ -19,18 +19,34 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+ .title {
+    width: 20%;
+    padding-top: 60px;
+    margin-left: 60px;
+    border-right: solid;
+ }
+
+.column{
+    display: flex;
+    flex-direction: column;
 }
 
 .header h1{
     display: inline-block;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 20px;
 } 
 
  .container{
-    float:left; 
-    font-size: 25px;
+    display: flex; 
+    font-size: 20px;
     border: 10px solid blue;
     padding: 25px;
     margin: 35px;
@@ -53,7 +69,7 @@ a {
 .header div {
     margin-right: 20px;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .header div ul {
@@ -70,13 +86,10 @@ p {
 
 }
 
-div a:hover{
+div a:hover {
     color: blue;
 }
 
-.container:hover {
-    filter: brightness(50%);
-}
 
 @media (min-height: 680px), screen and (orientation: portrait) {
     .container2 {
